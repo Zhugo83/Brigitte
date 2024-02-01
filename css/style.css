@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+}
+/* Margin 0px is always there */
+:root{
+    --noto: "Noto Sans", sans-serif;
+    --gloria: "Gloria Hallelujah", sans-serif;
+}
+
+ul{ 
+    list-style: none;
+    padding: 0px;
+}
+
+.width-1440{
+    align-items: center;
+    margin: auto;
+    max-width: 1440px;
+}
+
+a{
+    text-decoration: none;
+    transition:all 0.2s;
+}
+
+a:hover{
+    transition:all 0.2s;
+}
+
+.image-width{
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    vertical-align: middle;
+    display: inline-block;
+}
+/* General above */
+
+/* Header below */
+header{
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header img{
+    max-width: 200px;
+}
+
+header nav ul{
+    align-items: center;
+    gap: 40px;
+}
+
+header nav ul li a{
+    font-family: var(--noto);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+main section:nth-child(1) article h1,
+main section:nth-child(1) article h2{
+    font-family: var(--gloria);
+}
+
+main section:nth-child(1) img{
+    background-image: url(../img/favicon.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+main section:nth-child(1) a{
+    border: 1px solid black;
+    padding:13px 25px 13px 25px;
+}
+main section:nth-child(1) p:first-of-type{
+    font-family: var(--noto);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+main section:nth-child(1) p:last-of-type{
+    padding: 10px 0px 40px 0px;
+}
+
+main section:nth-child(1) h1{
+    font-family: var(--gloria);
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 45px;
+    padding: 40px 0px 20px 0px;
+}
+
+main section:nth-child(1) h2{
+    padding: 16px 0px 20px 0px;
+}
