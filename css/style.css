@@ -18,9 +18,17 @@ ul{
     max-width: 1440px;
 }
 
+.LINKBUTTON{
+    border: 1px solid #FBBBCD;
+    padding:13px 25px 13px 25px;
+    margin: auto;
+}
+
 a{
     text-decoration: none;
     transition:all 0.2s;
+    color: black;
+    font-family: var(--noto);
 }
 
 a:hover{
@@ -28,13 +36,7 @@ a:hover{
 }
 
 .image-width{
-    height: auto;
     max-width: 100%;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    vertical-align: middle;
-    display: inline-block;
 }
 /* General above */
 
@@ -54,7 +56,6 @@ header nav ul{
 }
 
 header nav ul li a{
-    font-family: var(--noto);
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
@@ -73,10 +74,6 @@ main section:nth-child(1) img{
     background-position-x: right;
 }
 
-main section:nth-child(1) a{
-    border: 1px solid black;
-    padding:13px 25px 13px 25px;
-}
 main section:nth-child(1) p:first-of-type{
     font-family: var(--noto);
     font-size: 16px;

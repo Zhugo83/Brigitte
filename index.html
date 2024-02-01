@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <!-- TODO: Move style to CSS! -->
+    <!-- TODO: Name IMG ALT files -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
@@ -12,7 +13,7 @@
 <body>
 
     <header style="display: flex;" class="width-1440">
-        <img src="img/Art studıo.png" alt="Logo du site">
+        <a href="/"><img src="img/Art studıo.png" alt="Logo du site"></a>
         <nav>
             <ul style="display: flex;">
                 <li><a href="#">Accueil</a></li>
@@ -42,7 +43,7 @@
                 <h1>Je suis Brigitte Bee</h1>
                 <h2>Gérante / Artiste / Exposante</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quam iusto repudiandae? Ipsum, molestiae earum tempore quo consequatur natus aspernatur delectus? Officia, nulla corrupti et aliquid ipsum suscipit molestias accusantium!</p>
-                <a href="#">Me rejoindre</a>
+                <a class="LINKBUTTON" href="#">Me rejoindre</a>
             </article>
             <img src="img/food-blogger-hero-img.jpg" alt="Image d'un personne qui mange">
 
@@ -50,9 +51,9 @@
 
         <section>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr;">
+            <div class="width-1440" style="display: grid; grid-template-columns: repeat(2, 1fr);">
 
-                <article style="background-color: #FBBBCD;">
+                <article style="background-color: #FBBBCD; padding: 150px;">
                     <h2>A propos de la Galerie</h2>
                     <p>La Galerie Brigitte Bee, fondée en 2011, est le lieu incontournable pour les
                         amateurs d’art en quête de découvertes uniques. Brigitte Bee, artiste et
@@ -70,18 +71,50 @@
                         explorer la richesse et la profondeur de l’expression artistique
                         contemporaine.</p>
                 </article>
-
-                <article style="display: grid; grid-template-columns: repeat(2, 1fr); max-height: 400px;">
+            <!-- REDO LATER!
+                <article style="display: grid; grid-template-columns: repeat(2, 1fr);">
                     <img src="img/Oeuvres/pexels-deeana-arts-1646953.jpg" alt="">
                     <img src="img/Oeuvres/pexels-deeana-arts-1646953.jpg" alt="">
                     <img src="img/Oeuvres/pexels-deeana-arts-1646953.jpg" alt="">
                     <img src="img/Oeuvres/pexels-deeana-arts-1646953.jpg" alt="">
                     <img src="img/Oeuvres/pexels-deeana-arts-1646953.jpg" alt="">
                     <img src="img/Oeuvres/pexels-deeana-arts-1646953.jpg" alt="">
-                </article>
+                </article> 
+            -->
 
             </div>
 
+        </section>
+
+        <section class="width-1440"> <!-- section3 -->
+            <article style="display: grid; grid-template-columns: repeat(2, 1fr)">
+                <h2>Découvrez nos oeuvres</h2>
+                <a class="LINKBUTTON" href="#">Voir toutes les oeuvres</a>
+            </article>
+            <div  style="display: grid; grid-template-columns: repeat(2, 1fr);">
+                <!-- FIX IMAGE SIZE ASAP!
+                    <article>
+                        <img src="img/Oeuvres/pexels-peter-fazekas-1170576.jpg" alt="">
+                        <h2>Peinture 5</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, repellat expedita sapiente at odit vitae alias! Iste necessitatibus veritatis in esse ab quaerat sapiente rem ullam fuga tempora, culpa eligendi.</p>
+                    </article>
+                    <article>
+                        <img src="img/Oeuvres/pexels-peter-fazekas-1170576.jpg" alt="">
+                        <h2>Peinture 4</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam impedit dolorum maxime beatae mollitia voluptate exercitationem quo, ullam autem illum esse vero sed officiis pariatur velit. Inventore error hic quae.</p>
+                    </article>
+                    <article>
+                        <img src="img/Oeuvres/pexels-peter-fazekas-1170576.jpg" alt="">
+                        <h2>Peinture 3</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nemo officiis exercitationem obcaecati a maxime rerum. Eius harum esse aperiam pariatur, nam similique, assumenda et nesciunt itaque quasi consectetur voluptatibus!</p>
+                    </article>
+                    <article>
+                        <img src="img/Oeuvres/pexels-peter-fazekas-1170576.jpg" alt="">
+                        <h2>Peinture 2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nisi dignissimos neque laboriosam, nobis voluptatibus sit eum expedita rem labore repudiandae dolor. Tempora maxime porro itaque, animi voluptatibus perspiciatis illo.</p>
+                    </article>
+                -->
+            </div>
         </section>
 
     </main>
