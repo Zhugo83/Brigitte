@@ -12,10 +12,19 @@ ul{
     padding: 0px;
 }
 
+i{
+    color: #cc3900;
+}
+
 .width-1440{
     align-items: center;
     margin: auto;
     max-width: 1440px;
+}
+
+.image-width{
+    width: 100%;
+    object-fit: cover;
 }
 
 .LINKBUTTON{
@@ -35,15 +44,13 @@ a:hover{
     transition:all 0.2s;
 }
 
-.image-width{
-    max-width: 100%;
-}
 /* General above */
 
 /* Header below */
 header{
     justify-content: space-between;
     padding: 10px;
+    display: flex;
 }
 
 header img{
@@ -53,6 +60,7 @@ header img{
 header nav ul{
     align-items: center;
     gap: 40px;
+    display: flex;
 }
 
 header nav ul li a{
@@ -61,6 +69,11 @@ header nav ul li a{
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
+}
+
+main section:nth-child(1){
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
 }
 
 main section:nth-child(1) article h1,
@@ -74,7 +87,11 @@ main section:nth-child(1) img{
     background-position-x: right;
 }
 
-main section:nth-child(1) p:first-of-type{
+main section:nth-child(1) article{
+    max-width: 500px;
+}
+
+main section:nth-child(1) article:first-of-type{
     font-family: var(--noto);
     font-size: 16px;
     font-weight: 500;
@@ -82,11 +99,11 @@ main section:nth-child(1) p:first-of-type{
     letter-spacing: 0em;
     text-align: left;
 }
-main section:nth-child(1) p:last-of-type{
+main section:nth-child(1) article p:last-of-type{
     padding: 10px 0px 40px 0px;
 }
 
-main section:nth-child(1) h1{
+main section:nth-child(1) article h1{
     font-family: var(--gloria);
     font-size: 45px;
     font-weight: 400;
@@ -94,6 +111,73 @@ main section:nth-child(1) h1{
     padding: 40px 0px 20px 0px;
 }
 
-main section:nth-child(1) h2{
+main section:nth-child(1) article h2{
     padding: 16px 0px 20px 0px;
+}
+/* End of section1 */
+
+/* Start of section2 */
+main section:nth-child(2) > div{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main section:nth-child(2) div article:nth-child(1){
+    background-color: #FBBBCD; 
+    padding: 150px;
+}
+/* End of section2 */
+
+/* Start of section3 */
+main section:nth-child(3) > div{
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+}
+
+main section:nth-child(3) > article{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+}
+/* End of section3 */
+
+/* Start of section4 */
+main section:nth-child(4){
+    background-color: #F7F7F7;
+    padding: 80px 15px;
+}
+
+main section:nth-child(4) > h2{
+    font-family: var(--gloria);
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center;
+}
+
+main section:nth-child(4) div{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+}
+
+main section:nth-child(4) div article{
+    padding: 10px;
+}
+
+main section:nth-child(4) div article img{
+    padding: 0px 0px 20px 0px;
+    height: 300px;
+}
+
+main section:nth-child(4) div article h3{
+    padding: 0px 0px 20px 0px;
+    font-family: var(--gloria);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+main section:nth-child(4) div article p{
+    padding: 0px 0px 35px 0px;
+    font-family: var(--noto);
+    font-size: 14px;
+    font-weight: 400;
 }
