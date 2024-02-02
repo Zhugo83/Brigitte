@@ -18,10 +18,10 @@
         <nav>
             <ul>
                 <li><a href="#">Accueil</a></li>
-                <li><a href="#">La Galerie</a></li>
-                <li><a href="#">Les oeuvres</a></li>
-                <li><a href="#">Les artistes</a></li>
-                <li><a href="#">Les actuallités</a></li>
+                <li><a href="#Galerie">La Galerie</a></li>
+                <li><a href="#Oeuvres">Les oeuvres</a></li>
+                <li><a href="#Artist">Les artistes</a></li>
+                <li><a href="#Actuallités">Les actuallités</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -40,7 +40,11 @@
         <section class="width-1440"> <!-- Section1 -->
 
             <article>
-                <p>BIENVENUE</p>
+                <div>
+                    <Hr>
+                    <p>BIENVENUE</p>
+                </div>
+                
                 <h1>Je suis Brigitte Bee</h1>
                 <h2>Gérante / Artiste / Exposante</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quam iusto repudiandae? Ipsum, molestiae earum tempore quo consequatur natus aspernatur delectus? Officia, nulla corrupti et aliquid ipsum suscipit molestias accusantium!</p>
@@ -50,7 +54,7 @@
 
         </section>
 
-        <section> <!-- Section2 -->
+        <section id="Galerie"> <!-- Section2 -->
 
             <div class="width-1440">
 
@@ -86,7 +90,7 @@
 
         </section>
 
-        <section class="width-1440"> <!-- section3 -->
+        <section class="width-1440" id="Oeuvres"> <!-- section3 -->
             <article>
                 <h2>Découvrez nos oeuvres</h2>
                 <a class="LINKBUTTON" href="#">Voir toutes les oeuvres</a>
@@ -116,7 +120,7 @@
             </div>
         </section>
 
-        <section class="width-1440"> <!-- section4 -->
+        <section class="width-1440" id="Artist"> <!-- section4 -->
             <h2>Nos Artistes</h2>
             <!-- TODO: Space between a -->
             <div class="width-1440">
@@ -176,10 +180,49 @@
             </div>
         </section>
 
+        <section id="Actuallités"> <!-- Section 5 -->
+            <h2>Découvrez nos actualités</h2>
+            <a href="#">Voir toutes les actualités</a>
+            <div class="width-1440" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                <article>
+                    <img class="image-width" src="img/Blog/Article 1.png" alt="">
+                    <h3>Voyage dans l’Art Moderne</h3>
+                    <p>décembre 8, 2023</p>
+                    <p>L’Art Moderne, avec ses éclats de créativité et sa diversité
+                        stylistique, offre un périple captivant à travers les expressions
+                        contemporaines. À la Galerie d’Art Urbain,…</p>
+                    <p>Read More >></p>
+                </article>
+                <article>
+                    <img class="image-width" src="img/Blog/Article 2.png" alt="">
+                    <h3>Delectus non nesciunt sunt</h3>
+                    <p>décembre 7, 2023</p>
+                    <p>Error illum.</p>
+                    <p>Libero voluptatem.</p> <!-- ??? -->
+                    <p>Read More >></p>
+                </article>
+                <article>
+                    <img class="image-width" src="img/Blog/Article 3.png" alt="">
+                    <h3>Labore deleniti fugiat beatae nesciunt</h3>
+                    <p>décembre 7, 2023</p>
+                    <p>Repellat magnam et et soluta voluptatum. Dolores excepturi
+                        rerum asperiores in aut id Nostrum ab vel consequuntur aut
+                        magnam est. aut minima debitis eius alias.…</p>
+                    <p>Read More >></p>
+                </article>
+            </div>
+        </section>
     </main>
 
-    <footer>
-
+    <footer class="width-1440">
+        <div>
+            <h2>Contactez-nous pour exposer
+                vos oeuvres dans la galerie</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dicta nostrum, ratione
+                doloremque accusantium ex, magni obcaecati vitae assumenda itaque natus tempore.
+                Eaque consequatur sunt, dolores minima earum nesciunt pariatur.</p>
+            <a href="#">Nous contacter </a>
+        </div>
     </footer>
 
 </body>

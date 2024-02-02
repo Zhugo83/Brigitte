@@ -1,5 +1,6 @@
 *{
     margin: 0px;
+    scroll-behavior: smooth;
 }
 /* Margin 0px is always there */
 :root{
@@ -180,4 +181,16 @@ main section:nth-child(4) div article p{
     font-family: var(--noto);
     font-size: 14px;
     font-weight: 400;
+}
+/* End of section4 */
+
+/* Start of footer */
+footer{
+    background-color: #cc3900;
+}
+
+footer div{
+    display: block;
+    max-width: 800px;
+    text-align: center;
 }
